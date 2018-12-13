@@ -1,4 +1,9 @@
 var growler = new Vue({
   el: "#growler",
-  data: {}
+  // POJO
+  data: {
+    appName: "Growler"
+  }
 });
+
+// Semantic Binding {{}}
