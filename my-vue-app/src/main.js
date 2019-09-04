@@ -4,14 +4,16 @@ import Vue from "vue";
 import App from "./App";
 import LazyLoadDirective from "./directives/LazyLoadDirective";
 import VueLazyload from "vue-lazyload";
+import { VLazyImagePlugin } from "v-lazy-image";
 // import axios from "axios";
 
 Vue.config.productionTip = false;
 
 Vue.directive("lazyload", LazyLoadDirective);
+Vue.use(VLazyImagePlugin);
 Vue.use(VueLazyload, {
-  // attempt: 1,
-  // preLoad: 1,
+  attempt: 1,
+  preLoad: 1,
   // observer: true,
   // observerOptions: {
   //   rootMargin: "10px 20px 30px 40px",

@@ -3,19 +3,27 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Image handling / lazyLoading options"/>
     <Home/>
+    <!-- <Slider/> -->
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import Home from "./components/Home";
+import Slider from "./components/Slider";
 
 export default {
   name: "app",
   components: {
     HelloWorld,
-    Home
+    Home,
+    Slider
   }
+  // methods: {
+  //   handler(component) {
+  //     console.log(component + " this component is showing");
+  //   }
+  // }
 };
 </script>
 
